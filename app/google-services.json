@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "956540710322",
+    "project_id": "video-meeting-408cb",
+    "storage_bucket": "video-meeting-408cb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:956540710322:android:75e55bcc7b40bee7ef88ab",
+        "android_client_info": {
+          "package_name": "kashyap.anurag.videomeeting"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "956540710322-7hdpg7qh930vpferb9obh4u4m5mddiln.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBjbn_HE3dcXTLpnqPWwDd7jkB52oiwPE4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "956540710322-7hdpg7qh930vpferb9obh4u4m5mddiln.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

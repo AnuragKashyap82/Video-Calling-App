@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="@dimen/_5sdp"
+    android:id="@+id/userContainer"
+    android:animateLayoutChanges="true"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/textFirstChar"
+        android:layout_width="@dimen/_35sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:background="@drawable/background_user"
+        android:fontFamily="@font/ubuntu_bold"
+        android:includeFontPadding="false"
+        android:textAllCaps="true"
+        android:textColor="@color/colorTextIcons"
+        android:text="AK"
+        android:textSize="@dimen/_22ssp"
+        android:layout_centerVertical="true"
+        android:gravity="center"/>
+
+    <ImageView
+        android:id="@+id/imageSelected"
+        android:layout_width="@dimen/_35ssp"
+        android:layout_height="@dimen/_35ssp"
+        android:src="@drawable/ic_call_black"
+        android:foregroundGravity="center"
+        android:visibility="gone"
+        android:padding="@dimen/_4ssp"
+        app:tint="@color/colorTextIcons"
+        android:layout_centerVertical="true"/>
+
+    <View
+        android:id="@+id/viewDivider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:background="@color/colorDivider"
+        android:layout_below="@id/textFirstChar"
+        android:layout_toEndOf="@id/textFirstChar"/>
+
+    <ImageView
+        android:id="@+id/imageVideoMeeting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_video_black"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:padding="@dimen/_4sdp"
+        app:tint="@color/colorPrimary"
+        android:contentDescription="@string/app_name"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"/>
+
+    <ImageView
+        android:id="@+id/imageAudioMeeting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_call_black"
+        android:padding="@dimen/_4sdp"
+        app:tint="@color/colorPrimary"
+        android:layout_toStartOf="@id/imageVideoMeeting"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:layout_centerVertical="true"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@id/textFirstChar"
+        android:layout_toStartOf="@id/imageAudioMeeting">
+
+        <TextView
+            android:id="@+id/textUserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:ellipsize="end"
+            android:fontFamily="@font/ubuntu_medium"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="@dimen/_13ssp"
+            android:text="Anurag Kashyap"/>
+
+        <TextView
+            android:id="@+id/textEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:ellipsize="end"
+            android:fontFamily="@font/ubuntu_regular"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:layout_below="@id/textUserName"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="@dimen/_10ssp"
+            android:text="anurag@kasshyap.com"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
